@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+
+<body>
+
+<script>
+var obj = {
+	name: "홍길동",
+	age: 20,
+	print: function() {		
+	},
+	friends: [
+	    { name: "홍길동", age: 20 },
+	    { name: "홍길동", age: 20 },
+	    { name: "홍길동", age: 20 }],
+	address: {
+		postno: '111-111',
+		base: '경기도',
+		detail: '용인'
+	}
+};
+console.log(obj);
+
+var obj2 = new Object();
+obj2.name = "임꺽정";
+obj2.age = 30;
+obj2.print = function() {
+};
+obj2.friends = [];
+obj2.friends[0] = new Object();
+obj2.friends[0].name = "홍길동";
+obj2.friends[0].age = 20;
+obj2.friends[1] = new Object();
+obj2.address = new Object();
+obj2.address.postno = '111-222';
+obj2.address.base = '서울';
+obj2.address.detail = '강남';
+console.log(obj2);
+
+var obj3 = new Object();
+obj3.child = new Object();
+obj3.child.child = new Object();
+obj3.child.child.child = new Object();
+obj3.child.child.child.name = "홍길동";
+console.log(obj3);
+
+// 함수가 객체다!
+function jQuery() {
+	console.log("함수다....!");
+}
+var $ = jQuery; // 외국에서 많이 쓰임. jQuery 다 쓰기는 힘들기 때문에 간단하게 $ 변수 선언하고 사용
+$();
+$.plus = function(a, b) {
+	return a + b;
+}
+
+console.log($.plus(10, 20));
+
+// 배열도 객체다!
+var arr = []; // new Array();
+arr[0] = "홍길동";
+arr[1] = {name:"임꺽정", age:30};
+arr[2] = function() {alert('okok')};
+
+console.log(arr[0]);
+console.log(arr[1].age);
+arr[2]();
+arr.okok = function() {
+	alert('헐...');
+};
+arr.okok();
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
