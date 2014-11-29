@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>block vs inline</h1>
+<!-- 
+HTML의 역할: UI layout을 생성
+CSS => 화면의 모양을 지정
+javascript => 화면을 제어
+
+block => 라인 전체를 점유하는 컴포넌트
+ 예) h1, h2, ..., p, div
+inline => 라인에 삽입
+ 예) b, i, address, span
+
+ -->
+ <div style='border:1px solid red'> <!-- UI 그루핑 -->
+ <h1 style='border:1px solid blue'>제목</h1>
+ <p style='border:1px solid black'>
+ 내용<b>굵은글자</b>테스트
+ <a href='http://www.daum.net'
+ 	style='border:1px solid green'>다음</a>테스트</p>
+ <h1 style='border:1px solid blue'>제목</h1>
+ <p style='border:1px solid black'>내용
+ <span style='border:1px solid green'>테스트</span>테스트</p>
+ </div>
+</body>
+</html>
